@@ -11,7 +11,3 @@ app.include_router(media.router, prefix='/media')  # Added media routes
 
 # Create database tables automatically
 Base.metadata.create_all(engine)
-
-@app.get("/")
-def read_root():
-    return {"status": "API is running"}
