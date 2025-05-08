@@ -4,6 +4,7 @@ from routes import auth, media
 from database import engine, get_db
 
 app = FastAPI()
+application = app
 
 # Register routes
 app.include_router(auth.router, prefix='/auth')
