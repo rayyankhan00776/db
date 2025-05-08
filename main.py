@@ -1,8 +1,7 @@
-# app.py (updated)
-from fastapi import FastAPI 
+from fastapi import FastAPI
 from models.base import Base
 from routes import auth, media  # Added media routes
-from database import engine
+from database import engine, get_db
 
 app = FastAPI()
 
@@ -12,3 +11,7 @@ app.include_router(media.router, prefix='/media')  # Added media routes
 
 # Create database tables automatically
 Base.metadata.create_all(engine)
+
+@app.get("/")
+def read_root():
+    return {"status": "API is running"}
