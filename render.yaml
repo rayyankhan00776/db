@@ -7,7 +7,7 @@ services:
     startCommand: chmod +x ./start.sh && ./start.sh
     envVars:
       - key: DATABASE_URL
-        value: postgresql://ab:ijyx5AuWujmQFO8ylDOp55RwBFxIV9pH@dpg-d0ehqgre5dus73fjdk2g-a.oregon-postgres.render.com/snapyz
+        value: postgresql://ab:ijyx5AuWujmQFO8ylDOp55RwBFxIV9pH@dpg-d0ehqre5dus73fjdk2g-a.oregon-postgres.render.com/snapyz
       - key: PORT
         value: 10000
     autoDeploy: true
