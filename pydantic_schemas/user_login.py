@@ -1,5 +1,6 @@
 from pydantic import BaseModel, EmailStr
+from sqlalchemy import Column, LargeBinary
 
 class UserLogin(BaseModel):
     email: EmailStr
-    password: str
+    password = Column(LargeBinary, nullable=False)
