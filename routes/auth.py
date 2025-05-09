@@ -1,6 +1,6 @@
 import uuid
 import bcrypt
-import PyJWT as jwt  # Changed from 'import jwt' to 'import PyJWT as jwt'
+import jwt
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import get_db
