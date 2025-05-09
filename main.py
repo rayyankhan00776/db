@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from models.base import Base
 from routes import auth, media
-from database import engine, get_db
+from database import engine
 
 app = FastAPI()
 
