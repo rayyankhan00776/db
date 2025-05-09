@@ -1,7 +1,6 @@
 import uuid
 import bcrypt
 import jwt
-from jwt import encode, decode
 from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy.orm import Session
 from database import get_db
